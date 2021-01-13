@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108695504-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108695504-2');
+</script>
   <meta charset="UTF-8">
   <meta property="og:title" content="{{ page.title }} | {{ site.name }}" />
   <title>AF-Viewer Home Page</title>
@@ -30,9 +39,6 @@
     background: #36f;
   }
   </style>
-  {% if jekyll.environment != "development" %}
-    {% include analytics.html %}
-  {% endif %}
 </head>
 <body>
   <h1>License Denied</h1>
